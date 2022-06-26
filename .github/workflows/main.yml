@@ -25,7 +25,7 @@ jobs:
           # sed -i "/PROCESS-NAME/d" $(find ./ -name "*.list"|grep -v " ")
           sed -i "/URL-REGEX/d" $(find ./ -name "*.list"|grep -v " ")
           sed -i "/IP-CIDR/ s/\(.*\),\(.*\),.*/\1,\2/gp" $(find ./ -name "*.list"|grep -v " ")
-          for i in $(find ./ -name "*.list"||grep -v " "|awk -F'.' '{print "."$2}'); do mv $i.list $i.yaml; done
+          for i in $(find ./ -name "*.list"|grep -v " "|awk -F'.' '{print "."$2}'); do mv $i.list $i.yaml; done
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
