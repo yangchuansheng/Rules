@@ -1,0 +1,34 @@
+name: create clash rule providers
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: create rule providers
+        run: |
+          git checkout master
+          rm -rf Clash/Providers/Ruleset
+          cp -rf Clash/Ruleset Clash/Providers/Ruleset
+          cd Clash/Providers/Ruleset
+          sed -i "/,/ s/^/  - /" $(find ./ -name "*.list")
+          sed -i "/#/ s/^/  /" $(find ./ -name "*.list")
+          sed -i "1i\payload:" $(find ./ -name "*.list")
+          sed -i "/USER-AGENT/d" $(find ./ -name "*.list")
+          sed -i "/PROCESS-NAME/d" $(find ./ -name "*.list")
+          sed -i "/URL-REGEX/d" $(find ./ -name "*.list")
+          sed -i "/IP-CIDR/ s/\(.*\),\(.*\),.*/\1,\2/gp" $(find ./ -name "*.list")
+          for i in $(find ./ -name "*.list"|awk -F'.' '{print "."$2}'); do mv $i.list $i.yaml; done
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
