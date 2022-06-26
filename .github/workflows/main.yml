@@ -18,14 +18,14 @@ jobs:
       - name: create rule providers
         run: |
           git checkout master
-          sed -i "/,/ s/^/  - /" $(find ./ -name "*.list")
-          sed -i "/#/ s/^/  /" $(find ./ -name "*.list")
-          sed -i "1i\payload:" $(find ./ -name "*.list")
-          sed -i "/USER-AGENT/d" $(find ./ -name "*.list")
-          sed -i "/PROCESS-NAME/d" $(find ./ -name "*.list")
-          sed -i "/URL-REGEX/d" $(find ./ -name "*.list")
-          sed -i "/IP-CIDR/ s/\(.*\),\(.*\),.*/\1,\2/gp" $(find ./ -name "*.list")
-          for i in $(find ./ -name "*.list"|awk -F'.' '{print "."$2}'); do mv $i.list $i.yaml; done
+          sed -i "/,/ s/^/  - /" $(find ./ -name "*.list"|grep -v " ")
+          sed -i "/#/ s/^/  /" $(find ./ -name "*.list"|grep -v " ")
+          sed -i "1i\payload:" $(find ./ -name "*.list"|grep -v " ")
+          sed -i "/USER-AGENT/d" $(find ./ -name "*.list"|grep -v " ")
+          # sed -i "/PROCESS-NAME/d" $(find ./ -name "*.list"|grep -v " ")
+          sed -i "/URL-REGEX/d" $(find ./ -name "*.list"|grep -v " ")
+          sed -i "/IP-CIDR/ s/\(.*\),\(.*\),.*/\1,\2/gp" $(find ./ -name "*.list"|grep -v " ")
+          for i in $(find ./ -name "*.list"||grep -v " "|awk -F'.' '{print "."$2}'); do mv $i.list $i.yaml; done
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
