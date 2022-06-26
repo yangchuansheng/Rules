@@ -10,7 +10,9 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
 
       - name: create rule providers
         run: |
