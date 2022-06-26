@@ -22,4 +22,4 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
         with:
           source-repo: "git@github.com:yangchuansheng/Rules.git"
-          destination-repo: "git@gitee.com:yangchuansheng/Rules.git"
+          destination-repo: "git@gitee.com:yangchuansheng/rules.git"
