@@ -15,9 +15,6 @@ jobs:
       - name: create rule providers
         run: |
           git checkout master
-          rm -rf Clash/Providers/Ruleset
-          cp -rf Clash/Ruleset Clash/Providers/Ruleset
-          cd Clash/Providers/Ruleset
           sed -i "/,/ s/^/  - /" $(find ./ -name "*.list")
           sed -i "/#/ s/^/  /" $(find ./ -name "*.list")
           sed -i "1i\payload:" $(find ./ -name "*.list")
