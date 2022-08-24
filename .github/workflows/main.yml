@@ -47,6 +47,30 @@ jobs:
           for i in ${CIDR_LIST}; do sed -i "s/  - /  - '/g" $i; done
           for i in ${CIDR_LIST}; do sed -i "s/$/'/g" $i; done
           for i in ${CIDR_LIST}; do sed -i "1i\payload:" $i; done
+          
+          
+          LIST=$(find ./ -name "*.list"|grep -v "cidr"|grep -Ev "Domain|CIDR"|awk -F "." '{print $1"."$2}'|grep -v "Search Plugin")
+          for i in $LIST
+          do 
+            j=$(sed -n -e "/IP-CIDR/p" $i.list)
+            if [ -n "$j" ]; then sed -n -e "/IP-CIDR/p" $i.list > $i-CIDR.list; fi
+          done
+          for i in $LIST
+          do 
+            j=$(sed -n -e "/DOMAIN/p" $i.list)
+            if [ -n "$j" ]; then sed -n -e "/DOMAIN/p" $i.list > $i-Domain.list; fi
+          done
+          DOMAIN_LIST=$(find ./ -name "*-Domain.list")
+          for i in ${DOMAIN_LIST}; do sed -i "/payload:/d" $i; done
+          for i in ${DOMAIN_LIST}; do sed -i "s/DOMAIN,//g" $i; done
+          for i in ${DOMAIN_LIST}; do sed -i "s/DOMAIN-SUFFIX,//g" $i; done
+          for i in ${DOMAIN_LIST}; do sed -i "s/DOMAIN-KEYWORD,//g" $i; done
+          
+          CIDR_LIST=$(find ./ -name "*-CIDR.list")
+          for i in ${CIDR_LIST}; do sed -i "/payload:/d" $i; done
+          for i in ${CIDR_LIST}; do sed -i "s/IP-CIDR,//g" $i; done
+          for i in ${CIDR_LIST}; do sed -i "s/IP-CIDR6,//g" $i; done
+          for i in ${CIDR_LIST}; do sed -i "s/,no-resolve//g" $i; done
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
