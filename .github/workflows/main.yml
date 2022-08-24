@@ -33,7 +33,7 @@ jobs:
           DOMAIN_LIST=$(find ./ -name "*-Domain.yaml")
           for i in ${DOMAIN_LIST}; do sed -i "/payload:/d" $i; done
           for i in ${DOMAIN_LIST}; do sed -i "s/DOMAIN,//g" $i; done
-          for i in ${DOMAIN_LIST}; do sed -i "s/DOMAIN-SUFFIX,/./g" $i; done
+          for i in ${DOMAIN_LIST}; do sed -i "s/DOMAIN-SUFFIX,/+./g" $i; done
           for i in ${DOMAIN_LIST}; do sed -i "s/DOMAIN-KEYWORD,//g" $i; done
           for i in ${DOMAIN_LIST}; do sed -i "s/  - /  - '/g" $i; done
           for i in ${DOMAIN_LIST}; do sed -i "s/$/'/g" $i; done
