@@ -63,7 +63,7 @@ jobs:
           DOMAIN_LIST=$(find ./ -name "*-Domain.list")
           for i in ${DOMAIN_LIST}; do sed -i "/payload:/d" $i; done
           for i in ${DOMAIN_LIST}; do sed -i "s/DOMAIN,//g" $i; done
-          for i in ${DOMAIN_LIST}; do sed -i "s/DOMAIN-SUFFIX,//g" $i; done
+          for i in ${DOMAIN_LIST}; do sed -i "s/DOMAIN-SUFFIX,/./g" $i; done
           for i in ${DOMAIN_LIST}; do sed -i "s/DOMAIN-KEYWORD,//g" $i; done
           
           CIDR_LIST=$(find ./ -name "*-CIDR.list")
