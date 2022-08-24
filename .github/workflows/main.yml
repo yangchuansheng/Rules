@@ -33,7 +33,7 @@ jobs:
           for i in ${DOMAIN_LIST}; do sed -i "s/DOMAIN-KEYWORD,//g" $i; done
           for i in ${DOMAIN_LIST}; do sed -i "s/  - /  - '/g" $i; done
           for i in ${DOMAIN_LIST}; do sed -i "s/$/'/g" $i; done
-          for i in ${CIDR_LIST}; do sed -i "1i\payload:" $i; done
+          for i in ${DOMAIN_LIST}; do sed -i "1i\payload:" $i; done
           
           CIDR_LIST=$(find ./ -name "*-CIDR.yaml")
           for i in ${CIDR_LIST}; do sed -i "/payload:/d" $i; done
