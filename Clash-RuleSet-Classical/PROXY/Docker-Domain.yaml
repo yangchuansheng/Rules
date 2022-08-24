@@ -1,3 +1,4 @@
+payload:
   - 'docker.com'
   - 'docker.io'
   - 'dockerhub.com'

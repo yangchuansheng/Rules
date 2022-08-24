@@ -1,3 +1,4 @@
+payload:
   - 'origin.com'
   - 'cloudsync-prod.s3.amazonaws.com'
   - 'origin-a.akamaihd.net'

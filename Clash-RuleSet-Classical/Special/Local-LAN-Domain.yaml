@@ -1,3 +1,4 @@
+payload:
   - 'foo.com'
   - 'ip6-localhost'
   - 'ip6-loopback'

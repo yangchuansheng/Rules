@@ -1,3 +1,4 @@
+payload:
   - 'consul.io'
   - 'hashicorp.com'
   - 'nomadproject.io'
