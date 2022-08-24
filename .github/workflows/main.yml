@@ -21,7 +21,7 @@ jobs:
           git checkout master
           LIST=$(find ./ -name "*.yaml"|grep -v "cidr"|grep -Ev "Domain|CIDR"|awk -F "." '{print $1"."$2}')
           for i in $LIST
-            do grep "IP-CIDR" $i.yaml
+            do cat $i.yaml
           done
 
       - name: Deploy
