@@ -20,9 +20,7 @@ jobs:
         run: |
           git checkout master
           LIST=$(find ./ -name "*.yaml"|grep -v "cidr"|grep -Ev "Domain|CIDR"|awk -F "." '{print $1"."$2}')
-          for i in $LIST
-            do cat $i.yaml
-          done
+          for i in $LIST; do sed -n -e "/IP-CIDR/p" $i.yaml > $i-CIDR.yaml; done
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
