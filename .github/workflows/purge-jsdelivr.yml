@@ -1,4 +1,4 @@
-name: create clash rule providers
+name: purge jsdelivr
 
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ jobs:
           submodules: true
           fetch-depth: 0
 
-      - name: create rule providers
+      - name: purge jsdelivr
         shell: bash
         run: |
           git checkout gh-pages
