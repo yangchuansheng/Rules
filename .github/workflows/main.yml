@@ -20,8 +20,8 @@ jobs:
           git checkout master
           cd ./Clash-RuleSet-Classical
           LIST=$(find ./ -name "*.yaml"|grep -v "cidr"|grep -Ev "Domain|CIDR"|awk -F "." '{print $1"."$2}')
-          bash -c 'for i in $LIST; do grep "IP-CIDR" $i.yaml > $i-CIDR.yaml; done'
-          bash -c 'for i in $LIST; do grep -v "IP-CIDR" $i.yaml > $i-Domain.yaml; done'
+          bash -c 'cd ./Clash-RuleSet-Classical && LIST=$(find ./ -name "*.yaml"|grep -v "cidr"|grep -Ev "Domain|CIDR"|awk -F "." \'{print $1"."$2}\') && for i in $LIST; do grep "IP-CIDR" $i.yaml > $i-CIDR.yaml; done'
+          bash -c 'cd ./Clash-RuleSet-Classical && LIST=$(find ./ -name "*.yaml"|grep -v "cidr"|grep -Ev "Domain|CIDR"|awk -F "." \'{print $1"."$2}\') && for i in $LIST; do grep -v "IP-CIDR" $i.yaml > $i-Domain.yaml; done'
           DOMAIN_LIST=$(find ./ -name "*-Domain.yaml")
           for i in ${DOMAIN_LIST}; do sed -i "s/DOMAIN,//g" $i; done
           for i in ${DOMAIN_LIST}; do sed -i "s/  - /  - '/g" $i; done
