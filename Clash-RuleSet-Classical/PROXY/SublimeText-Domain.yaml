@@ -1,5 +1,5 @@
 payload:
-  - '.sublimetext.com'
-  - '.sublimehq.com'
-  - '.sublimemerge.com'
-  - '.packagecontrol.io'
+  - '+.sublimetext.com'
+  - '+.sublimehq.com'
+  - '+.sublimemerge.com'
+  - '+.packagecontrol.io'

@@ -1,4 +1,4 @@
 payload:
-  - '.senseagro.cn'
-  - '.senseagro.com'
-  - '.senseagro.com.cn'
+  - '+.senseagro.cn'
+  - '+.senseagro.com'
+  - '+.senseagro.com.cn'

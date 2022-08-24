@@ -1,5 +1,5 @@
 payload:
-  - '.ibangtiao.com'
-  - '.kankanpro.cn'
-  - '.kkstudy.cn'
-  - '.taogepian.com'
+  - '+.ibangtiao.com'
+  - '+.kankanpro.cn'
+  - '+.kkstudy.cn'
+  - '+.taogepian.com'

@@ -1,5 +1,5 @@
 payload:
-  - '.playstation.com'
-  - '.playstation.net'
-  - '.playstationnetwork.com'
-  - '.sonyentertainmentnetwork.com'
+  - '+.playstation.com'
+  - '+.playstation.net'
+  - '+.playstationnetwork.com'
+  - '+.sonyentertainmentnetwork.com'
