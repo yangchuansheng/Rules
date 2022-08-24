@@ -18,7 +18,7 @@ jobs:
       - name: create rule providers
         run: |
           git checkout master
-          cd Clash-RuleSet-Classical
+          cd ./Clash-RuleSet-Classical
           LIST=$(find ./ -name "*.yaml"|grep -v "cidr"|grep -Ev "Domain|CIDR"|awk -F "." '{print $1"."$2}')
           for i in $LIST; do grep "IP-CIDR" $i.yaml > $i-CIDR.yaml; done
           for i in $LIST; do grep -v "IP-CIDR" $i.yaml > $i-Domain.yaml; done
