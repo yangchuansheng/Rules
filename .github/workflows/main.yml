@@ -15,7 +15,7 @@ jobs:
           submodules: true
           fetch-depth: 0
 
-      - name: purge jsdelivr
+      - name: create rule providers
         shell: bash
         run: |
           git checkout master
