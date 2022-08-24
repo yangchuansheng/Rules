@@ -1,4 +1,4 @@
 payload:
-  - 'jfrog.com'
-  - 'jfrog.org'
-  - 'bintray.com'
+  - '.jfrog.com'
+  - '.jfrog.org'
+  - '.bintray.com'

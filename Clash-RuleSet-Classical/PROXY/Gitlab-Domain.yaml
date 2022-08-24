@@ -1,7 +1,7 @@
 payload:
-  - 'gitlab.com'
-  - 'gitlab.net'
-  - 'gitlab-static.net'
-  - 'gitlab-assets.oss-cn-hongkong.aliyuncs.com'
-  - 'gitter-static.net'
-  - 'gitter.im'
+  - '.gitlab.com'
+  - '.gitlab.net'
+  - '.gitlab-static.net'
+  - '.gitlab-assets.oss-cn-hongkong.aliyuncs.com'
+  - '.gitter-static.net'
+  - '.gitter.im'

@@ -1,7 +1,7 @@
 payload:
-  - 'ubi.com'
-  - 'ubisoft.com'
-  - 'uplay.com'
-  - 'ubisoft-uplay-savegames.s3.amazonaws.com'
-  - 'ubisoft-orbit-savegames.s3.amazonaws.com'
-  - 'uplaypc-s-ubisoft.cdn.ubi.com'
+  - '.ubi.com'
+  - '.ubisoft.com'
+  - '.uplay.com'
+  - '.ubisoft-uplay-savegames.s3.amazonaws.com'
+  - '.ubisoft-orbit-savegames.s3.amazonaws.com'
+  - '.uplaypc-s-ubisoft.cdn.ubi.com'

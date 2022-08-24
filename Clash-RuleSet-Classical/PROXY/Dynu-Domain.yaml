@@ -1,4 +1,4 @@
 payload:
-  - 'dynu.com'
-  - 'dynu.net'
-  - 'freeddns.org'
+  - '.dynu.com'
+  - '.dynu.net'
+  - '.freeddns.org'

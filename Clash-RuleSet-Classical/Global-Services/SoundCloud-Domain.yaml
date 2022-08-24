@@ -1,4 +1,4 @@
 payload:
-  - 'p-cdn.us'
-  - 'sndcdn.com'
-  - 'soundcloud.com'
+  - '.p-cdn.us'
+  - '.sndcdn.com'
+  - '.soundcloud.com'

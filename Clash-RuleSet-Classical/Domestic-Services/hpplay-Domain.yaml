@@ -1,7 +1,7 @@
 payload:
-  - 'hpplay.cn'
-  - 'hpplay.com.cn'
-  - 'mirrorcast.cn'
-  - 'mirrorcast.tv'
-  - 'mirrorcast.com.cn'
-  - '乐播.com'
+  - '.hpplay.cn'
+  - '.hpplay.com.cn'
+  - '.mirrorcast.cn'
+  - '.mirrorcast.tv'
+  - '.mirrorcast.com.cn'
+  - '.乐播.com'
