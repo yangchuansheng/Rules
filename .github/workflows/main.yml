@@ -16,8 +16,8 @@ jobs:
           fetch-depth: 0
 
       - name: create rule providers
+        shell: bash
         run: |
-          exec bash
           git checkout master
           LIST=$(find ./ -name "*.yaml"|grep -v "cidr"|grep -Ev "Domain|CIDR"|awk -F "." '{print $1"."$2}')
           for i in $LIST; do grep "IP-CIDR" $i.yaml > $i-CIDR.yaml; done
