@@ -25,7 +25,11 @@ jobs:
             j=$(sed -n -e "/IP-CIDR/p" $i.yaml)
             if [ -n "$j" ]; then sed -n -e "/IP-CIDR/p" $i.yaml > $i-CIDR.yaml; fi
           done
-          for i in $LIST; do sed -n -e "/DOMAIN/p" $i.yaml > $i-Domain.yaml; done
+          for i in $LIST
+          do 
+            j=$(sed -n -e "/DOMAIN/p" $i.yaml)
+            if [ -n "$j" ]; then sed -n -e "/DOMAIN/p" $i.yaml > $i-Domain.yaml; fi
+          done
           DOMAIN_LIST=$(find ./ -name "*-Domain.yaml")
           for i in ${DOMAIN_LIST}; do sed -i "/payload:/d" $i; done
           for i in ${DOMAIN_LIST}; do sed -i "s/DOMAIN,//g" $i; done
