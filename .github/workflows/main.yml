@@ -20,7 +20,7 @@ jobs:
           git checkout master
           cd ./Clash-RuleSet-Classical
           LIST=$(find ./ -name "*.yaml"|grep -v "cidr"|grep -Ev "Domain|CIDR"|awk -F "." '{print $1"."$2}')
-          for i in $LIST; do grep "IP-CIDR" $i.yaml > $i-CIDR.yaml; done
+          for i in $LIST; do echo $i; done
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
