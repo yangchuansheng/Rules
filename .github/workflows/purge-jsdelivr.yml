@@ -1,0 +1,26 @@
+name: create clash rule providers
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: create rule providers
+        shell: bash
+        run: |
+          git checkout gh-pages
+          LIST=$(find ./ -name "*.yaml"|awk -F "." '{print $2"."$3}')
+          for i in $LIST; do curl https://purge.jsdelivr.net/gh/yangchuansheng/Rules@gh-pages$i; done
+          
+          LIST=$(find ./ -name "*.list"|awk -F "." '{print $2"."$3}')
+          for i in $LIST; do curl https://purge.jsdelivr.net/gh/yangchuansheng/Rules@gh-pages$i; done
