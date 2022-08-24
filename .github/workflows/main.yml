@@ -30,7 +30,7 @@ jobs:
           for i in ${DOMAIN_LIST}; do sed -i "s/$/'/g" $i; done
           for i in ${CIDR_LIST}; do sed -i "1i\payload:" $i; done
           
-          CIDR_LIST=$(find ./ -name "*-CIDR.yaml")
+          CIDR_LIST=$(find ./ -name "*-CIDR.yaml"|grep -v $(grep -rl "payload" $(find ./ -name "*-CIDR.yaml")))
           for i in ${CIDR_LIST}; do sed -i "s/IP-CIDR,//g" $i; done
           for i in ${CIDR_LIST}; do sed -i "s/IP-CIDR6,//g" $i; done
           for i in ${CIDR_LIST}; do sed -i "s/,no-resolve//g" $i; done
