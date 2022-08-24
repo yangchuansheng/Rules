@@ -19,8 +19,16 @@ jobs:
         shell: bash
         run: |
           git checkout gh-pages
-          LIST=$(find ./ -name "*.yaml"|awk -F "." '{print $2"."$3}')
-          for i in $LIST; do curl https://purge.jsdelivr.net/gh/yangchuansheng/Rules@gh-pages$i; done
+          LIST=$(ls -l Clash-RuleSet-Classical/*.yaml|awk '{print $NF}')
+          for i in $LIST; do curl https://purge.jsdelivr.net/gh/yangchuansheng/Rules/@gh-pages$i; done
+          LIST=$(ls -l Clash-RuleSet-Classical/Special/*.yaml|awk '{print $NF}')
+          for i in $LIST; do curl https://purge.jsdelivr.net/gh/yangchuansheng/Rules/@gh-pages$i; done
+          LIST=$(ls -l Clash-RuleSet-Classical/PROXY/*.yaml|awk '{print $NF}')
+          for i in $LIST; do curl https://purge.jsdelivr.net/gh/yangchuansheng/Rules/@gh-pages$i; done
           
-          LIST=$(find ./ -name "*.list"|awk -F "." '{print $2"."$3}')
-          for i in $LIST; do curl https://purge.jsdelivr.net/gh/yangchuansheng/Rules@gh-pages$i; done
+          LIST=$(ls -l *.list|awk '{print $NF}')
+          for i in $LIST; do curl https://purge.jsdelivr.net/gh/yangchuansheng/Rules/@gh-pages$i; done
+          LIST=$(ls -l Special/*.list|awk '{print $NF}')
+          for i in $LIST; do curl https://purge.jsdelivr.net/gh/yangchuansheng/Rules/@gh-pages$i; done
+          LIST=$(ls -l PROXY/*.list|awk '{print $NF}')
+          for i in $LIST; do curl https://purge.jsdelivr.net/gh/yangchuansheng/Rules/@gh-pages$i; done
