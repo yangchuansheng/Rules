@@ -22,7 +22,8 @@ jobs:
           LIST=$(find ./ -name "*.yaml"|grep -v "cidr"|grep -Ev "Domain|CIDR"|awk -F "." '{print $1"."$2}')
           for i in $LIST
           do 
-            if [ ! -n $(sed -n -e "/IP-CIDR/p" Microsoft.yaml) ]; then sed -n -e "/IP-CIDR/p" $i.yaml > $i-CIDR.yaml; fi
+            j=$(sed -n -e "/IP-CIDR/p" $i.yaml)
+            if [ ! -n "$j" ]; then sed -n -e "/IP-CIDR/p" $i.yaml > $i-CIDR.yaml; fi
           done
           for i in $LIST; do sed -n -e "/DOMAIN/p" $i.yaml > $i-Domain.yaml; done
           DOMAIN_LIST=$(find ./ -name "*-Domain.yaml")
