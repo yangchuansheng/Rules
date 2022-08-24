@@ -68,8 +68,6 @@ jobs:
           
           CIDR_LIST=$(find ./ -name "*-CIDR.list")
           for i in ${CIDR_LIST}; do sed -i "/payload:/d" $i; done
-          for i in ${CIDR_LIST}; do sed -i "s/IP-CIDR,//g" $i; done
-          for i in ${CIDR_LIST}; do sed -i "s/IP-CIDR6,//g" $i; done
           for i in ${CIDR_LIST}; do sed -i "s/,no-resolve//g" $i; done
 
       - name: Deploy
