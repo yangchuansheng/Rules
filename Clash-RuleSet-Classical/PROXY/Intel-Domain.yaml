@@ -11,7 +11,7 @@ payload:
   - '+.clearlinux.org'
   - '+.ospray.net'
   - '+.ospray.org'
-  - '+..intel'
+  - '+.intel'
   - '+.intel.ac'
   - '+.intel.ae'
   - '+.intel.af'
