@@ -715,7 +715,7 @@ disable_udp = false
 rule = ["[]🎯 直连服务", "(🇨🇳)", "[]🇭🇰 香港-SUB1", "[]🇭🇰 香港-SUB2", "[]🇭🇰 香港-SUB3", "[]🇭🇰 香港-轮询", "[]🇹🇼 台湾-SUB1", "[]🇹🇼 台湾-SUB2", "[]🇹🇼 台湾-SUB3", "[]🇹🇼 台湾-轮询", "[]🇺🇸 美国-SUB1", "[]🇺🇸 美国-SUB2", "[]🇺🇸 美国-SUB3", "[]🇸🇬 新加坡-SUB1", "[]🇸🇬 新加坡-SUB2", "[]🇸🇬 新加坡-SUB3", "[]🍖 默认代理"]
 
 [[custom_groups]]
-name = "🏬 阿里巴巴"
+name = "🐱 阿里巴巴"
 type = "select"
 disable_udp = false
 rule = ["[]🎯 直连服务", "(🇨🇳)", "[]🌏 大陆服务"]
@@ -1661,7 +1661,7 @@ type = "surge-ruleset"
 interval = 3600
 
 [[rulesets]]
-group = "🏬 阿里巴巴"
+group = "🐱 阿里巴巴"
 ruleset = "https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/Alibaba.list"
 type = "surge-ruleset"
 interval = 3600
