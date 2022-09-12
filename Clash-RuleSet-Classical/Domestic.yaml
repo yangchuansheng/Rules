@@ -6506,6 +6506,7 @@ payload:
   - DOMAIN-SUFFIX,fsllq.com
   - DOMAIN-SUFFIX,fsllq.com.cn
   ## >> 枫叶电商平台
+  - DOMAIN-SUFFIX,fyeds.com
   - DOMAIN-SUFFIX,fyeds0.com
   - DOMAIN-SUFFIX,fyeds1.com
   - DOMAIN-SUFFIX,fyeds2.com
@@ -6516,6 +6517,18 @@ payload:
   - DOMAIN-SUFFIX,fyeds7.com
   - DOMAIN-SUFFIX,fyeds8.com
   - DOMAIN-SUFFIX,fyeds9.com
+  - DOMAIN-SUFFIX,fymall0.com
+  - DOMAIN-SUFFIX,fymall1.com
+  - DOMAIN-SUFFIX,fymall4.com
+  - DOMAIN-SUFFIX,fymall7.com
+  - DOMAIN-SUFFIX,fymall9.com
+  - DOMAIN-SUFFIX,fymallqa0.com
+  - DOMAIN-SUFFIX,fymallqa1.com
+  - DOMAIN-SUFFIX,fymallqa2.com
+  - DOMAIN-SUFFIX,fymallqa3.com
+  - DOMAIN-SUFFIX,fymallqa4.com
+  - DOMAIN-SUFFIX,fymallqa7.com
+  - DOMAIN-SUFFIX,fymallqa9.com
   ## >> Gtimg
   - DOMAIN-SUFFIX,gtimg.cn
   - DOMAIN-SUFFIX,gtimg.com
