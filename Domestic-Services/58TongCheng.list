@@ -8,7 +8,6 @@ DOMAIN-SUFFIX,58cdn.com.cn
 DOMAIN-SUFFIX,58control.cn
 DOMAIN-SUFFIX,58corp.com
 DOMAIN-SUFFIX,58dns.org
-DOMAIN-SUFFIX,58ganji.com
 DOMAIN-SUFFIX,58img.com.cn
 DOMAIN-SUFFIX,58lovepet.com
 DOMAIN-SUFFIX,58shangban.com
@@ -58,6 +57,7 @@ DOMAIN-SUFFIX,nidiandaojia.com
 DOMAIN-SUFFIX,canbaojin.com
 DOMAIN-SUFFIX,yirenjiankang.cn
 # >> 赶集
+DOMAIN-SUFFIX,58ganji.com
 DOMAIN-SUFFIX,58ganji-corp.com
 DOMAIN-SUFFIX,ganji.com
 DOMAIN-SUFFIX,ganjistatic1.com
