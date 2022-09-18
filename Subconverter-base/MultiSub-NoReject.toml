@@ -277,9 +277,9 @@ replace = "[x10]"
 match = "\[\]"
 replace = ""
 
-;[[node_pref.rename_node]]
-;match = "\(?((x|X)?(\d+)(\.?\d+)?)((\s?倍率?)|(x|X))\)?"
-;replace = "[x$1]"
+[[node_pref.rename_node]]
+match = "\(?((x|X)?(\d+)(\.?\d+)?)((\s?倍率?)|(x|X))\)?"
+replace = "[x$1]"
 
 [emojis]
 add_emoji = true
