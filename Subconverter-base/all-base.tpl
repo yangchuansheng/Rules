@@ -29,10 +29,11 @@ ipv6: true
 tun:
   enable: true
   stack: system # or gvisor
-  auto-route: true # auto set global route for Windows
+  auto-route: true # auto set global route
   auto-detect-interface: true # auto detect interface, conflict with `interface-name`
   dns-hijack:
     - 22.0.0.2:53 # when `fake-ip-range` is 198.18.0.1/16, should hijack 198.18.0.2:53
+    - tcp://any:53
     - udp://any:53
 #interface-name: WLAN
 dns:
@@ -42,12 +43,17 @@ dns:
 {% endif %}
 {% if request.clash.dns == "linux-tun" %}
 ipv6: true
+  auto-redir:
+  enable: true
+  auto-route: true
 tun:
   enable: true
   stack: system # or gvisor
+  auto-route: true # auto set global route
 #  auto-detect-interface: true # auto detect interface, conflict with `interface-name`
   dns-hijack:
     - 1.0.0.1:53 # Do not modifly this line
+    - tcp://any:53
     - udp://any:53
 #interface-name: WLAN
 dns:
@@ -81,7 +87,7 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
     - 1.1.1.1
-  enhanced-mode: fake-ip # redir-host #fake-ip
+  enhanced-mode: fake-ip # or redir-host (not recommended)
   fake-ip-range: 22.0.0.0/8
   fake-ip-filter:
     # === LAN ===
