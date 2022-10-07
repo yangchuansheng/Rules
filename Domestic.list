@@ -3685,7 +3685,10 @@ DOMAIN-SUFFIX,nutstorehq.com
 DOMAIN-SUFFIX,300hu.com
 DOMAIN-SUFFIX,360top.com
 DOMAIN-SUFFIX,blackdragon.com
+DOMAIN-SUFFIX,chicalot.cn
 DOMAIN-SUFFIX,dao123.com
+DOMAIN-SUFFIX,duiou.com.cn
+DOMAIN-SUFFIX,goselling.com
 DOMAIN-SUFFIX,jd-app.com
 DOMAIN-SUFFIX,jdbusiness.com
 DOMAIN-SUFFIX,jddapeigou.com
@@ -3762,6 +3765,7 @@ DOMAIN-SUFFIX,ocwms.com
 DOMAIN-SUFFIX,yizhitou.com
 ## >> 京喜
 DOMAIN-SUFFIX,buyjingxi.com
+DOMAIN-SUFFIX,jdlike.cn
 DOMAIN-SUFFIX,jingxi.com
 DOMAIN-SUFFIX,paipai.com
 DOMAIN-SUFFIX,wanggou.com
@@ -3779,7 +3783,9 @@ DOMAIN-SUFFIX,jcloudec.com
 DOMAIN-SUFFIX,jcloudgslb.net
 DOMAIN-SUFFIX,jdcloud-edu.com
 DOMAIN-SUFFIX,jdcloud-elite.com
+DOMAIN-SUFFIX,jdcloud-mail.com
 DOMAIN-SUFFIX,jdcloud.com
+DOMAIN-SUFFIX,jdcloudsite.com
 # >> 京东云API
 DOMAIN-SUFFIX,jdcloud-api.com
 DOMAIN-SUFFIX,jdcloud-api.net
@@ -3933,6 +3939,7 @@ DOMAIN-SUFFIX,xjoycity.com
 ## >> 四季优选
 DOMAIN-SUFFIX,7fresh.com
 ## >> 一号店
+DOMAIN-SUFFIX,1huizhan.com
 DOMAIN-SUFFIX,info-insur.com
 DOMAIN-SUFFIX,jdworldwide.com
 DOMAIN-SUFFIX,yhcdn.cn
