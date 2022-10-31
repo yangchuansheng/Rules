@@ -86,6 +86,10 @@ DOMAIN-SUFFIX,zjgslb.com
 DOMAIN-SUFFIX,amemv.cn
 DOMAIN-SUFFIX,amemv.com
 DOMAIN-SUFFIX,amemv.net
+## >> 半次元
+DOMAIN-SUFFIX,bcy.net
+DOMAIN-SUFFIX,bcyimg.com
+DOMAIN-SUFFIX,lf-rc1.yhgfb-cn-static.com
 ## >> 锤子商城
 DOMAIN-SUFFIX,smartisan.cn
 DOMAIN-SUFFIX,smartisan.com
