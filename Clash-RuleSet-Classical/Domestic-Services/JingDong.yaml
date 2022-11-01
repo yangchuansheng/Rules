@@ -78,8 +78,15 @@ payload:
   - DOMAIN-SUFFIX,jd-ex.com
   - DOMAIN-SUFFIX,jd-ex.com.cn
   - DOMAIN-SUFFIX,jd-ex.net
+  - DOMAIN-SUFFIX,jdl.cn
+  - DOMAIN-SUFFIX,jdl.com
+  - DOMAIN-SUFFIX,jdl.com.cn
   - DOMAIN-SUFFIX,jdwl.com
+  - DOMAIN-SUFFIX,jhscm.com
+  - DOMAIN-SUFFIX,logiseasy.com
   - DOMAIN-SUFFIX,ocwms.com
+  - DOMAIN-SUFFIX,wuliujie.cn
+  - DOMAIN-SUFFIX,wuliujie.com
   - DOMAIN-SUFFIX,yizhitou.com
   ## >> 京喜
   - DOMAIN-SUFFIX,buyjingxi.com

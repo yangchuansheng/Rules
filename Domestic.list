@@ -3761,8 +3761,15 @@ DOMAIN-SUFFIX,jd-ex.cn
 DOMAIN-SUFFIX,jd-ex.com
 DOMAIN-SUFFIX,jd-ex.com.cn
 DOMAIN-SUFFIX,jd-ex.net
+DOMAIN-SUFFIX,jdl.cn
+DOMAIN-SUFFIX,jdl.com
+DOMAIN-SUFFIX,jdl.com.cn
 DOMAIN-SUFFIX,jdwl.com
+DOMAIN-SUFFIX,jhscm.com
+DOMAIN-SUFFIX,logiseasy.com
 DOMAIN-SUFFIX,ocwms.com
+DOMAIN-SUFFIX,wuliujie.cn
+DOMAIN-SUFFIX,wuliujie.com
 DOMAIN-SUFFIX,yizhitou.com
 ## >> 京喜
 DOMAIN-SUFFIX,buyjingxi.com
@@ -9487,7 +9494,6 @@ DOMAIN-SUFFIX,baoxianshichang.com
 DOMAIN-SUFFIX,battlenet.com
 DOMAIN-SUFFIX,fallenark.com
 DOMAIN-SUFFIX,bctbook.com
-DOMAIN-SUFFIX,bcy.net
 DOMAIN-SUFFIX,bdatu.com
 DOMAIN-SUFFIX,bearychat.com
 DOMAIN-SUFFIX,beatsbydre.com
