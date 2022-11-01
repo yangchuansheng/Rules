@@ -5496,6 +5496,10 @@ payload:
   ## > 链家
   - DOMAIN-SUFFIX,lianjia.com
   - DOMAIN-SUFFIX,ljcdn.com
+  ## > 良品铺子
+  - DOMAIN-SUFFIX,517lppz.com
+  - DOMAIN-SUFFIX,lppz.com
+  - DOMAIN-SUFFIX,lppzimg.com
   ## > 猎聘
   - DOMAIN-SUFFIX,liepin.com
   - DOMAIN-SUFFIX,lietou.com
