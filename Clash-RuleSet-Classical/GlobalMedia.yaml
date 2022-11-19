@@ -391,6 +391,7 @@ payload:
   - DOMAIN-SUFFIX,watchespn.com
   - DOMAIN-SUFFIX,espn.hb.omtrdc.net
   - DOMAIN-SUFFIX,espndotcom.tt.omtrdc.net
+  - DOMAIN-SUFFIX,espn.api.edge.bamgrid.com
   ## >> Hotstar
   - DOMAIN-SUFFIX,hotstar-cdn.net
   - DOMAIN-SUFFIX,hotstar.com
