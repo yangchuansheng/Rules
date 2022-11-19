@@ -1773,11 +1773,16 @@ payload:
   - DOMAIN-SUFFIX,whatisworkspaceone.com
   - DOMAIN-SUFFIX,workspaceone.com
   ## > DigiCert
+  - DOMAIN-SUFFIX,dcocsp.cn
+  - DOMAIN-SUFFIX,digicert-cn.com
+  - DOMAIN-SUFFIX,digicert-validation.com
   - DOMAIN-SUFFIX,digicert.cn
   - DOMAIN-SUFFIX,digicert.com
   - DOMAIN-SUFFIX,digitalcertvalidation.com
   - DOMAIN-SUFFIX,freessl.com
   - DOMAIN-SUFFIX,geotrust.com
+  - DOMAIN-SUFFIX,public-trust.com
+  - DOMAIN-SUFFIX,quovadisglobal.com
   - DOMAIN-SUFFIX,rapidssl.com
   - DOMAIN-SUFFIX,thawte.com
   - DOMAIN-SUFFIX,thawte.de
