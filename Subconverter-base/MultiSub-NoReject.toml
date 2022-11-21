@@ -74,7 +74,7 @@ match = "(V[0-9]-)(IEPL专线 |)(.*)( )([0-9].*)(x) (原生IP)"
 replace = "$3[M][x$5]"
 
 [[node_pref.rename_node]]
-match = "(\|流媒体\|)"
+match = "(流媒体)"
 replace = "[M]"
 
 [[node_pref.rename_node]]
@@ -422,7 +422,7 @@ match = "(约旦|Jordan)"
 emoji = "🇯🇴"
 
 [[emojis.emoji]]
-match = "(智利|Chile)"
+match = "(智利|智力|Chile)"
 emoji = "🇨🇱"
 
 [[emojis.emoji]]
