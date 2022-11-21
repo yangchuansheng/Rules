@@ -42,6 +42,7 @@ payload:
   - DOMAIN-SUFFIX,azure.microsoft.com
   - DOMAIN-SUFFIX,azure.net
   - DOMAIN-SUFFIX,azurecomcdn.net
+  - DOMAIN-SUFFIX,azurecomm.net
   - DOMAIN-SUFFIX,azurecontainer.io
   - DOMAIN-SUFFIX,azurecosmos.net
   - DOMAIN-SUFFIX,azurecosmosdb.com
