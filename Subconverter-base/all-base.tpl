@@ -43,22 +43,20 @@ dns:
 {% endif %}
 {% if request.clash.dns == "linux-tun" %}
 ipv6: true
-  auto-redir:
-  enable: true
-  auto-route: true
 tun:
   enable: true
   stack: system # or gvisor
   auto-route: true # auto set global route
-#  auto-detect-interface: true # auto detect interface, conflict with `interface-name`
+  auto-detect-interface: true # auto detect interface, conflict with `interface-name`
   dns-hijack:
-    - 1.0.0.1:53 # Do not modifly this line
     - tcp://any:53
     - udp://any:53
-#interface-name: WLAN
+auto-redir:
+  enable: true
+  auto-route: true
 dns:
   enable: true
-  listen: 127.0.0.1:1053
+#  listen: 127.0.0.1:1053
   ipv6: true
 {% endif %}
 {% if request.clash.dns == "meta-tun" %}
