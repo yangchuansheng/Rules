@@ -15,7 +15,7 @@
 | [PROXY.list](https://github.com/LM-Firefly/Rules/blob/master/PROXY.list)                               | 常见国外服务                                                                                             |
 | [Domestic.list](https://github.com/LM-Firefly/Rules/blob/master/Domestic.list)                         | 中国大陆常见公司服务                                                                                     |
 | [Video-Crack.list](https://github.com/LM-Firefly/Rules/blob/master/Special/Video-Crack.list)           | 盗版视频解析站                                                                                           |
-| [DMCA-Sensitive.list](https://github.com/LM-Firefly/Rules/blob/master/Special/DMCA-Sensitive.list)     | DMCA 敏感域名（主要针对机场审计 tracker、迅雷）                                                          |
+| [DMCA-Sensitive.list](https://github.com/LM-Firefly/Rules/blob/master/Special/DMCA-Sensitive.list)     | DMCA 敏感域名（主要针对机场审计 tracker、迅雷）                                                    |
 | [LAN-Special-Apps.list](https://github.com/LM-Firefly/Rules/blob/master/Special/LAN-Special-Apps.list) | 局域网特殊应用域名（投屏、广播 等）                                                                      |
 | [Local-LAN.list](https://github.com/LM-Firefly/Rules/blob/master/Special/Local-LAN.list)               | 局域网 IP 段                                                                                             |
 | [NTP-service.list](https://github.com/LM-Firefly/Rules/blob/master/Special/NTP-Service.list)           | 常见 NTP 服务列表，路由器可能需要加入 fake-ip-filter                                                     |
