@@ -24,7 +24,7 @@ dns:
   listen: 0.0.0.0:53
   ipv6: true
 {% endif %}
-{% if request.clash.dns == "win-tun" %}
+{% if request.clash.dns == "win-tun" or request.clash.dns == "linux-tun" %}
 ipv6: true
 tun:
   enable: true
@@ -33,30 +33,14 @@ tun:
   auto-detect-interface: true # auto detect interface, conflict with `interface-name`
   dns-hijack:
     - 22.0.0.2:53 # when `fake-ip-range` is 198.18.0.1/16, should hijack 198.18.0.2:53
-    - tcp://any:53
-    - udp://any:53
+    - any:53
 #interface-name: WLAN
-dns:
-  enable: true
-#  listen: 0.0.0.0:53
-  ipv6: true
-{% endif %}
-{% if request.clash.dns == "linux-tun" %}
-ipv6: true
-tun:
-  enable: true
-  stack: system # or gvisor
-  auto-route: true # auto set global route
-  auto-detect-interface: true # auto detect interface, conflict with `interface-name`
-  dns-hijack:
-    - tcp://any:53
-    - udp://any:53
 auto-redir:
   enable: true
   auto-route: true
 dns:
   enable: true
-#  listen: 127.0.0.1:1053
+#  listen: 0.0.0.0:53
   ipv6: true
 {% endif %}
 {% if request.clash.dns == "meta-tun" %}
