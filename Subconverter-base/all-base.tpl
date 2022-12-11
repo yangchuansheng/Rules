@@ -29,15 +29,13 @@ ipv6: true
 tun:
   enable: true
   stack: system # or gvisor
-  auto-route: true # auto set global route
-  auto-detect-interface: true # auto detect interface, conflict with `interface-name`
   dns-hijack:
     - 22.0.0.2:53 # when `fake-ip-range` is 198.18.0.1/16, should hijack 198.18.0.2:53
     - any:53
+  auto-redir: true
+  auto-route: true # auto set global route
+  auto-detect-interface: true # auto detect interface, conflict with `interface-name`
 #interface-name: WLAN
-auto-redir:
-  enable: true
-  auto-route: true
 dns:
   enable: true
 #  listen: 0.0.0.0:53
