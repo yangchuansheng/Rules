@@ -339,6 +339,7 @@ payload:
   - DOMAIN-SUFFIX,msxiaona.cn
   - DOMAIN-SUFFIX,officeplus.cn
   - DOMAIN-SUFFIX,renlifang.com
+  - DOMAIN-SUFFIX,xiaoice.com
   ## >> 微软小娜
   - DOMAIN-SUFFIX,cortana.ai
   - DOMAIN-SUFFIX,cortanaanalytics.com
