@@ -437,6 +437,8 @@ payload:
   ## > APKCombo
   - DOMAIN-SUFFIX,apkcombo.com
   - DOMAIN-SUFFIX,down-apk.com
+  ## > Apkmirror
+  - DOMAIN-SUFFIX,apkmirror.com
   ## > Apkpure
   - DOMAIN-SUFFIX,apkpure.com
   - DOMAIN-SUFFIX,cdnpure.com
@@ -1641,6 +1643,8 @@ payload:
   - DOMAIN-SUFFIX,mol.im
   - DOMAIN-SUFFIX,thisismoney.co.uk
   - DOMAIN-SUFFIX,thismon.ee
+  ## > Decryptipastore
+  - DOMAIN-SUFFIX,decrypt.day
   ## > Dell
   - DOMAIN-SUFFIX,dell-alw.com
   - DOMAIN-SUFFIX,dell-brand.com
@@ -6873,6 +6877,9 @@ payload:
   - DOMAIN-SUFFIX,erolabs.com
   - DOMAIN-SUFFIX,erolabs.game
   - DOMAIN-SUFFIX,erolabs.net
+  ## >> fansta
+  - DOMAIN-SUFFIX,fansta.me
+  - DOMAIN-SUFFIX,misa-prod.s3.ap-northeast-1.amazonaws.com
   ## >> heyzo
   - DOMAIN-SUFFIX,heydoga.com
   - DOMAIN-SUFFIX,heyzo.com
@@ -6938,6 +6945,9 @@ payload:
   ## >> johren
   - DOMAIN-SUFFIX,johren.games
   - DOMAIN-SUFFIX,johren.net
+  ## >> kubakuba
+  - DOMAIN-SUFFIX,kubakuba.global
+  - DOMAIN-SUFFIX,kubakuba1996.com
   ## >> lethalhardcore
   - DOMAIN-SUFFIX,lethalhardcore.com
   - DOMAIN-SUFFIX,lethalhardcorevr.com
@@ -7479,6 +7489,7 @@ payload:
   - DOMAIN-SUFFIX,aflamsex.net
   - DOMAIN-SUFFIX,aflamsexhd.com
   - DOMAIN-SUFFIX,afriboyz.com
+  - DOMAIN-SUFFIX,aga-expo.com
   - DOMAIN-SUFFIX,agag.tw
   - DOMAIN-SUFFIX,agzy1.com
   - DOMAIN-SUFFIX,ah-me.com
@@ -7679,6 +7690,7 @@ payload:
   - DOMAIN-SUFFIX,avstar.me
   - DOMAIN-SUFFIX,avwong.com
   - DOMAIN-SUFFIX,awflapp.top
+  - DOMAIN-SUFFIX,axbdoll.com.tw
   - DOMAIN-SUFFIX,aziani.com
   - DOMAIN-SUFFIX,aznude.com
   - DOMAIN-SUFFIX,b3boos.com
@@ -9504,6 +9516,7 @@ payload:
   - DOMAIN-SUFFIX,lostbetsgames.com
   - DOMAIN-SUFFIX,lotcrap.com
   - DOMAIN-SUFFIX,love-sextoys.co.uk
+  - DOMAIN-SUFFIX,love6.tv
   - DOMAIN-SUFFIX,love7.xyz
   - DOMAIN-SUFFIX,lovedolltorso.com
   - DOMAIN-SUFFIX,lovegirls.cam
@@ -9916,6 +9929,7 @@ payload:
   - DOMAIN-SUFFIX,omg.adult
   - DOMAIN-SUFFIX,omg.blog
   - DOMAIN-SUFFIX,omgteens.com
+  - DOMAIN-SUFFIX,omorashi.org
   - DOMAIN-SUFFIX,onahodouga.com
   - DOMAIN-SUFFIX,onani-daisuki.com
   - DOMAIN-SUFFIX,one889.app
@@ -10051,6 +10065,7 @@ payload:
   - DOMAIN-SUFFIX,playbar.biz
   - DOMAIN-SUFFIX,playboy.com
   - DOMAIN-SUFFIX,playboyplus.com
+  - DOMAIN-SUFFIX,playmeow.com
   - DOMAIN-SUFFIX,playnft.es.ht
   - DOMAIN-SUFFIX,playno1.com
   - DOMAIN-SUFFIX,playporngames.com
@@ -12233,7 +12248,6 @@ payload:
   - DOMAIN-SUFFIX,apk-dl.com
   - DOMAIN-SUFFIX,apkdler.com
   - DOMAIN-SUFFIX,apkfind.com
-  - DOMAIN-SUFFIX,apkmirror.com
   - DOMAIN-SUFFIX,apkmonk.com
   - DOMAIN-SUFFIX,apkplz.com
   - DOMAIN-SUFFIX,aplusvpn.com
