@@ -2746,7 +2746,7 @@ disable_udp = false
 rule = ["[]REJECT", "[]🎯 直连服务", "[]🍖 默认代理"]
 
 [[custom_groups]]
-name = "⛔️ 广告服务",
+name = "⛔️ 广告服务"
 type = "select"
 disable_udp = false
 rule = ["[]REJECT", "[]🎯 直连服务"]
