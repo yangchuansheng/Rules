@@ -209,7 +209,7 @@ match = "\\[0\\.9\\]"
 replace = "[x0.9]"
 
 [[node_pref.rename_node]]
-match = "\\[1\\]"
+match = "(\\[1\\]|倍率1)"
 replace = "[x1]"
 
 [[node_pref.rename_node]]
@@ -229,7 +229,7 @@ match = "(\\[3\\])|(-3x)"
 replace = "[x3]"
 
 [[node_pref.rename_node]]
-match = "\\[5\\]"
+match = "(\\[5\\]|倍率5)"
 replace = "[x5]"
 
 [[node_pref.rename_node]]
