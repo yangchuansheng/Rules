@@ -290,6 +290,10 @@ match = "(阿尔巴尼亚|Albania)"
 emoji = "🇦🇱"
 
 [[emojis.emoji]]
+match = "(阿曼苏丹|马斯喀特|Muscat)"
+emoji = "🇴🇲"
+
+[[emojis.emoji]]
 match = "(阿塞拜疆|Azerbaijan)"
 emoji = "🇦🇿"
 
@@ -300,6 +304,10 @@ emoji = "🇪🇬"
 [[emojis.emoji]]
 match = "(爱沙尼亚|Estonia)"
 emoji = "🇪🇪"
+
+[[emojis.emoji]]
+match = "(巴林|Bahrain)"
+emoji = "🇧🇭"
 
 [[emojis.emoji]]
 match = "(巴拿马|Panama)"
@@ -1566,6 +1574,8 @@ rule = [
     "(^🇺🇦.*)",
     "(^🇻🇳.*)",
     "(^🇿🇦.*)",
+    "(^🇴🇲.*)",
+    "(^🇧🇭.*)",
     "[]REJECT",
 ]
 url = "http://connect.rom.miui.com/generate_204"
