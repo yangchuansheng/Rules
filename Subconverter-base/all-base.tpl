@@ -11,6 +11,10 @@ external-controller: {{ default(global.clash.api_port, "0.0.0.0:19090")}}
 #external-ui: folder
 secret: ''
 routing-mark: {{ default(global.clash.routing_mark, "16666")}}
+experimental:
+  ignore-resolve-fail: true
+  sniff-tls-sni: true
+  udp-fallback-match: true
 profile:
   store-fake-ip: true
   store-selected: true
@@ -29,31 +33,45 @@ ipv6: true
 tun:
   enable: true
   stack: system # or gvisor
-  dns-hijack:
-    - 22.0.0.2:53 # when `fake-ip-range` is 198.18.0.1/16, should hijack 198.18.0.2:53
-    - any:53
-  auto-redir: true
   auto-route: true # auto set global route
   auto-detect-interface: true # auto detect interface, conflict with `interface-name`
 #interface-name: WLAN
+  dns-hijack:
+    - 22.0.0.2:53 # when `fake-ip-range` is 198.18.0.1/16, should hijack 198.18.0.2:53
+    - any:53
+auto-redir:
+  enable: true
+  auto-route: true
 dns:
   enable: true
 #  listen: 0.0.0.0:53
   ipv6: true
 {% endif %}
 {% if request.clash.dns == "meta-tun" %}
+find-process-mode: strict
+global-client-fingerprint: chrome
 ipv6: true
 tun:
   enable: true
-  stack: gvisor #  only gvisor
+  stack: gvisor # gvisor / lwip
   dns-hijack:
-    - 0.0.0.0:53 # additional dns server listen on TUN
-  auto-route: true # auto set global route
+    - 0.0.0.0:53
+  auto-detect-interface: true
+  auto-route: true
+  mtu: 9000
+  strict_route: true
+  inet4_route_address:
+    - 0.0.0.0/1
+    - 128.0.0.0/1
+  inet6_route_address:
+    - "::/1"
+    - "8000::/1"
 #interface-name: WLAN
 dns:
   enable: true
+  prefer-h3: true
   ipv6: true
-  listen: 127.0.0.1:6868
+  listen: 0.0.0.0:53
 {% endif %}
 {% else %}
 ipv6: true
