@@ -631,7 +631,7 @@ match = "(?i:\\bRU[S]?\\b|Russia|Moscow|Petersburg|Siberia|伯力|莫斯科|圣�
 emoji = "🇷🇺"
 
 [[emojis.emoji]]
-match = "(?i:\\bSG[P]?\\b|Singapore|新加坡|狮城|[^-]新|新(?!▷|西)|沪新|京新|泉新|穗新|深新|杭新)"
+match = "(?i:\\bSG[P]?\\b|Singapore|新加坡|狮城|獅城|[^-]新|新(?!▷|西)|沪新|京新|泉新|穗新|深新|杭新)"
 emoji = "🇸🇬"
 
 [[emojis.emoji]]
