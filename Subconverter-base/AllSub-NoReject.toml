@@ -19,6 +19,7 @@ exclude_remarks = [
 
 [node_pref]
 udp_flag = true
+clash_proxies_style = "block"
 
 [[node_pref.rename_node]]
 match = "(解锁|)(\\|)(x.*)(\\|V2ray)"
