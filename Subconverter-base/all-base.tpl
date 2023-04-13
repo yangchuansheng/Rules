@@ -32,7 +32,7 @@ dns:
 ipv6: true
 tun:
   enable: true
-  stack: gvisor # or system
+  stack: system # or gvisor
   auto-route: true # auto set global route
   auto-detect-interface: true # auto detect interface, conflict with `interface-name`
 #interface-name: WLAN
