@@ -55,8 +55,9 @@ tcp-concurrent: true
 tun:
   enable: true
   stack: system # gvisor / lwip
+  device: utun0
   dns-hijack:
-    - 0.0.0.0:53
+  - any:53
   auto-detect-interface: true
   auto-route: true
   mtu: 9000
