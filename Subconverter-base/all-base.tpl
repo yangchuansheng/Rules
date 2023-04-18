@@ -51,9 +51,10 @@ dns:
 find-process-mode: strict
 global-client-fingerprint: chrome
 ipv6: true
+tcp-concurrent: true
 tun:
   enable: true
-  stack: gvisor # gvisor / lwip
+  stack: system # gvisor / lwip
   dns-hijack:
     - 0.0.0.0:53
   auto-detect-interface: true
@@ -67,11 +68,27 @@ tun:
     - "::/1"
     - "8000::/1"
 #interface-name: WLAN
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: true
+  sniff:
+    TLS:
+      ports: [443, 8443]
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+#  force-domain:
+#    - +.v2ex.com
+  skip-domain:
+     - Mijia Cloud
 dns:
   enable: true
   prefer-h3: true
   ipv6: true
-  listen: 0.0.0.0:53
+  ipv6-timeout: 150
+  listen: 0.0.0.0:5053
 {% endif %}
 {% else %}
 ipv6: true
@@ -243,6 +260,8 @@ dns:
   fallback-filter:
 #    geoip: true # default
 #    geoip-code: CN
+#    geosite:
+#        - gfw
     ipcidr: # ips in these subnets will be considered polluted
       - 0.0.0.0/32
       - 100.64.0.0/10
