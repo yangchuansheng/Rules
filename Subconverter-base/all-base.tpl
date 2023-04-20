@@ -44,7 +44,7 @@ auto-redir:
   auto-route: true
 dns:
   enable: true
-#  listen: 0.0.0.0:53
+  listen: 0.0.0.0:6053
   ipv6: true
 {% endif %}
 {% if request.clash.dns == "meta-tun" %}
@@ -96,7 +96,7 @@ ipv6: true
 #interface-name: WLAN
 dns:
   enable: true
-  listen: 127.0.0.1:1053
+  listen: 0.0.0.0:1053
   ipv6: true
 {% endif %}
   default-nameserver:
